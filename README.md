@@ -2,14 +2,13 @@
   <img src="brand/exports/meno-avatar-512.png" width="120" alt="Meno logo">
 </p>
 
-<h1 align="center">meno</h1>
+<h1 align="center">Meno.chat</h1>
 
 <p align="center"><b>An AI that <s>gives you answers</s> <i>actually</i> helps you learn.</b></p>
 
 Meno is an open-weight tutoring model. It is being built to give hints and ask questions instead of handing over answers, and to do well on [TutorBench](https://arxiv.org/abs/2510.02663), a benchmark of tutoring ability for high-school and AP-level STEM.
 
 The name comes from Plato's *Meno*, where Socrates guides a boy to a geometry proof by asking questions alone.
-
 > **Status: in development. No model, dataset, or benchmark result has been released yet.**
 
 ## Goals
