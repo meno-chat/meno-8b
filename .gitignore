@@ -1,0 +1,33 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# data and model files (keep the folder, not the contents)
+data/*
+!data/.gitkeep
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.ckpt
+checkpoints/
+wandb/
+outputs/
+
+# personal notes
+notes/
+
+# python
+__pycache__/
+.venv/
+venv/
+*.pyc
+.ipynb_checkpoints/
+
+# editors and OS
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>meno brand guidelines</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{--mint:#00D899;--mintd:#00A874;--ink:#0B0F0D;--surface:#11171400;--card:#10161300;--paper:#F3F5F0;--soft:#C9FBE9;--coral:#FF6B57;--line:#222B26;--mute:#97A39C}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--paper);font-family:'Instrument Sans',sans-serif;-webkit-font-smoothing:antialiased}
+.disp,h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-0.035em;margin:0}
+p{margin:0;line-height:1.55}
+.wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+.on-mint{--body:#0B0F0D;--eye:#F3F5F0;--pupil:#0B0F0D;--mouth:#F3F5F0}
+.on-ink{--body:#00D899;--eye:#F3F5F0;--pupil:#0B0F0D;--mouth:#0B0F0D}
+.on-paper{--body:#00D899;--eye:#F3F5F0;--pupil:#0B0F0D;--mouth:#0B0F0D}
+
+/* hero */
+.hero{background:var(--mint);color:var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0}
+.brand{display:flex;align-items:center;gap:10px}
+.brand .disp{font-size:34px}
+.tag{font-size:14px;font-weight:700;padding:8px 14px;border-radius:999px;background:var(--ink);color:var(--mint)}
+.hero-body{display:grid;grid-template-columns:1fr 260px;gap:48px;align-items:end;padding:72px 0 96px}
+.hero h1{font-size:clamp(42px,6.4vw,88px);line-height:1.12;letter-spacing:-0.03em}
+.hero h1 s{text-decoration-thickness:.06em;text-decoration-color:var(--ink)}
+.hero h1 mark{display:inline-block;line-height:1;background:var(--ink);color:var(--mint);padding:.06em .16em .1em;border-radius:.2em;margin:0 .04em}
+.hero .sub{font-size:22px;max-width:560px;margin-top:32px}
+.status{display:inline-block;margin-top:24px;font-size:14px;font-weight:700;border:2px solid var(--ink);border-radius:999px;padding:8px 14px}
+@media(max-width:860px){.hero-body{grid-template-columns:1fr}.hero-body svg{width:160px;height:160px}}
+
+/* sections */
+.sec{display:grid;grid-template-columns:240px 1fr;gap:48px;padding:104px 0;border-top:1px solid var(--line)}
+.sec:first-of-type{border-top:0}
+.label{font-size:15px;font-weight:600;color:var(--mint)}
+.sec h2{font-size:clamp(32px,4vw,52px);line-height:1.02;margin-bottom:20px}
+.lede{font-size:19px;color:var(--mute);max-width:600px}
+.body{display:flex;flex-direction:column;gap:40px}
+@media(max-width:860px){.sec{grid-template-columns:1fr;gap:16px;padding:72px 0}}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+@media(max-width:860px){.grid3{grid-template-columns:1fr}.grid6{grid-template-columns:repeat(3,1fr)}}
+.stage{border:1px solid var(--line);border-radius:24px;height:260px;display:flex;align-items:center;justify-content:center;background:#0F1512}
+.cap{margin-top:12px}
+.cap b{display:block;font-size:16px}
+.cap span{font-size:14px;color:var(--mute)}
+.sw{height:96px;border-radius:16px;margin-bottom:12px;border:1px solid var(--line)}
+.sw-name{font-weight:600;font-size:15px}
+.sw-meta{font-size:13px;color:var(--mute);line-height:1.5}
+
+/* buttons: flat with a darker bottom edge */
+.btn{display:inline-block;padding:14px 26px;border-radius:16px;font-weight:700;font-size:16px;border:0;font-family:inherit;cursor:pointer}
+.b-mint{background:var(--mint);color:var(--ink);box-shadow:0 5px 0 var(--mintd)}
+.b-paper{background:var(--paper);color:var(--ink);box-shadow:0 5px 0 #B8BDB5}
+.b-line{background:transparent;color:var(--paper);border:2px solid #3A4640;box-shadow:0 4px 0 #3A4640;padding:12px 24px}
+.b-coral{background:var(--coral);color:var(--ink);box-shadow:0 5px 0 #D4452F}
+
+/* chat */
+.chat{display:flex;gap:12px;align-items:flex-end}
+.bub{border-radius:20px;padding:13px 18px;font-size:17px;line-height:1.35;max-width:420px}
+.you{background:#1A221E;color:var(--paper)}
+.meno{background:var(--mint);color:var(--ink)}
+
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.rules div{padding:18px 0;border-top:1px solid var(--line)}
+.rules b{display:block;font-size:17px;margin-bottom:4px}
+.rules span{color:var(--mute);font-size:15px}
+@media(max-width:860px){.rules{grid-template-columns:1fr}}
+
+.card{border-radius:28px;padding:48px;aspect-ratio:1200/630;display:flex;flex-direction:column;justify-content:space-between;background:var(--mint);color:var(--ink)}
+.card h3{font-size:clamp(28px,4.2vw,58px);line-height:1.12;max-width:900px;letter-spacing:-0.03em}
+.card s{text-decoration-thickness:.06em}
+.card mark{display:inline-block;line-height:1;background:var(--ink);color:var(--mint);padding:.06em .16em .1em;border-radius:.2em;margin:0 .04em}
+footer{border-top:1px solid var(--line);padding:40px 0 64px;color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="face-think" viewBox="0 0 100 100">
+<rect x="5" y="15" width="90" height="70" rx="38" fill="var(--body)"/>
+<circle cx="33" cy="46" r="15" fill="var(--eye)"/><circle cx="67" cy="46" r="15" fill="var(--eye)"/>
+<circle cx="37" cy="42" r="8" fill="var(--pupil)"/><circle cx="71" cy="42" r="8" fill="var(--pupil)"/>
+<path d="M42 68 Q50 74 58 68" stroke="var(--mouth)" stroke-width="5" stroke-linecap="round" fill="none"/>
+</symbol>
+<symbol id="face-aha" viewBox="0 0 100 100">
+<rect x="5" y="15" width="90" height="70" rx="38" fill="var(--body)"/>
+<path d="M19 52 Q31 36 43 52 M57 52 Q69 36 81 52" stroke="var(--mouth)" stroke-width="7" stroke-linecap="round" fill="none"/>
+<path d="M40 65 Q50 76 60 65" stroke="var(--mouth)" stroke-width="6" stroke-linecap="round" fill="none"/>
+</symbol>
+<symbol id="face-oops" viewBox="0 0 100 100">
+<rect x="5" y="15" width="90" height="70" rx="38" fill="var(--body)"/>
+<circle cx="33" cy="46" r="15" fill="var(--eye)"/><circle cx="67" cy="46" r="15" fill="var(--eye)"/>
+<circle cx="29" cy="51" r="8" fill="var(--pupil)"/><circle cx="63" cy="51" r="8" fill="var(--pupil)"/>
+<ellipse cx="50" cy="71" rx="6" ry="5" fill="var(--mouth)"/>
+</symbol>
+</defs>
+</svg>
+
+<!-- HERO -->
+<header class="hero on-mint">
+<div class="wrap">
+<div class="nav">
+<div class="brand"><svg width="48" height="48" role="img" aria-label="meno"><use href="#face-think"/></svg><span class="disp">meno</span></div>
+<span class="tag">brand guidelines v6</span>
+</div>
+<div class="hero-body">
+<div>
+<h1>An AI that <s>gives you answers</s> <mark>actually</mark> helps you learn.</h1>
+<p class="sub">Meno is an open-weight tutoring model in development. It's being built to give hints, not answers.</p>
+<span class="status">status: in development, nothing released yet</span>
+</div>
+<svg width="260" height="260" role="img" aria-label="Meno mascot"><use href="#face-think"/></svg>
+</div>
+</div>
+</header>
+
+<main class="wrap">
+
+<!-- 01 MASCOT -->
+<section class="sec">
+<div class="label">01 / mascot</div>
+<div class="body">
+<div>
+<h2>one face, three moods</h2>
+<p class="lede">A rounded face with two eyes. Only the expression changes: thinking, got it, and not quite. There are no accessories.</p>
+</div>
+<div class="grid3">
+<div><div class="stage on-ink"><svg width="170" height="170" role="img" aria-label="thinking"><use href="#face-think"/></svg></div><div class="cap"><b>thinking</b><span>Default. Pupils up and right, soft smile.</span></div></div>
+<div><div class="stage on-ink"><svg width="170" height="170" role="img" aria-label="got it"><use href="#face-aha"/></svg></div><div class="cap"><b>got it</b><span>Closed happy eyes, wider smile.</span></div></div>
+<div><div class="stage on-ink"><svg width="170" height="170" role="img" aria-label="not quite"><use href="#face-oops"/></svg></div><div class="cap"><b>not quite</b><span>Pupils down and left, small “o” mouth.</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- 02 LOGO -->
+<section class="sec">
+<div class="label">02 / logo</div>
+<div class="body">
+<div>
+<h2>the mark and the wordmark</h2>
+<p class="lede">The face on mint is the primary mark. The wordmark is always lowercase: meno. Keep clear space equal to one eye width on every side.</p>
+</div>
+<div class="grid3">
+<div class="stage on-mint" style="background:var(--mint);height:200px;gap:12px"><svg width="64" height="64"><use href="#face-think"/></svg><span class="disp" style="font-size:44px;color:var(--ink)">meno</span></div>
+<div class="stage on-ink" style="height:200px;gap:12px"><svg width="64" height="64"><use href="#face-think"/></svg><span class="disp" style="font-size:44px;color:var(--mint)">meno</span></div>
+<div class="stage on-paper" style="background:var(--paper);height:200px;gap:12px"><svg width="64" height="64"><use href="#face-think"/></svg><span class="disp" style="font-size:44px;color:var(--ink)">meno</span></div>
+</div>
+<div style="display:flex;gap:40px;align-items:flex-end;flex-wrap:wrap">
+<div class="on-mint" style="display:flex;flex-direction:column;gap:10px"><div style="background:var(--mint);border-radius:30px;width:128px;height:128px;display:flex;align-items:center;justify-content:center"><svg width="96" height="96" aria-label="avatar"><use href="#face-think"/></svg></div><span class="sw-meta">avatar</span></div>
+<div class="on-mint" style="display:flex;flex-direction:column;gap:10px"><div style="background:var(--mint);border-radius:14px;width:56px;height:56px;display:flex;align-items:center;justify-content:center"><svg width="42" height="42" aria-label="app icon"><use href="#face-think"/></svg></div><span class="sw-meta">app icon</span></div>
+<div class="on-mint" style="display:flex;flex-direction:column;gap:10px"><div style="background:var(--mint);border-radius:8px;width:32px;height:32px;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" aria-label="favicon"><use href="#face-think"/></svg></div><span class="sw-meta">favicon</span></div>
+</div>
+</div>
+</section>
+
+<!-- 03 COLOR -->
+<section class="sec">
+<div class="label">03 / color</div>
+<div class="body">
+<div>
+<h2>mint leads</h2>
+<p class="lede">Mint is the brand. Ink and paper carry the text. Coral is used only for mistakes.</p>
+</div>
+<div class="grid6">
+<div><div class="sw" style="background:#00D899"></div><div class="sw-name">Mint</div><div class="sw-meta">#00D899<br>brand</div></div>
+<div><div class="sw" style="background:#00A874"></div><div class="sw-name">Mint edge</div><div class="sw-meta">#00A874<br>button bottoms</div></div>
+<div><div class="sw" style="background:#0B0F0D"></div><div class="sw-name">Ink</div><div class="sw-meta">#0B0F0D<br>text, dark ground</div></div>
+<div><div class="sw" style="background:#F3F5F0"></div><div class="sw-name">Paper</div><div class="sw-meta">#F3F5F0<br>light ground</div></div>
+<div><div class="sw" style="background:#C9FBE9"></div><div class="sw-name">Soft mint</div><div class="sw-meta">#C9FBE9<br>light panels</div></div>
+<div><div class="sw" style="background:#FF6B57"></div><div class="sw-name">Coral</div><div class="sw-meta">#FF6B57<br>mistakes only</div></div>
+</div>
+<p class="sw-meta" style="font-size:14px">Contrast (WCAG): ink on mint 10.4:1. White on mint 1.9:1, so text on mint is always ink.</p>
+</div>
+</section>
+
+<!-- 04 TYPE -->
+<section class="sec">
+<div class="label">04 / type</div>
+<div class="body">
+<div>
+<h2>two typefaces</h2>
+<p class="lede">Bricolage Grotesque ExtraBold for headlines and the wordmark. Instrument Sans for everything else.</p>
+</div>
+<div class="grid3" style="grid-template-columns:1fr 1fr">
+<div style="border:1px solid var(--line);border-radius:24px;padding:32px"><div class="disp" style="font-size:64px;line-height:1">Aa</div><div style="margin-top:16px;font-weight:700;font-family:'Bricolage Grotesque',sans-serif;font-size:20px">Bricolage Grotesque</div><div class="sw-meta">ExtraBold 800 · headlines, wordmark</div></div>
+<div style="border:1px solid var(--line);border-radius:24px;padding:32px"><div style="font-size:64px;line-height:1;font-weight:600">Aa</div><div style="margin-top:16px;font-weight:600;font-size:20px">Instrument Sans</div><div class="sw-meta">Regular 400 to Bold 700 · body, interface</div></div>
+</div>
+</div>
+</section>
+
+<!-- 05 VOICE -->
+<section class="sec">
+<div class="label">05 / voice</div>
+<div class="body">
+<div>
+<h2>ask first, then tell</h2>
+<p class="lede">Short sentences. Questions before explanations. Point at the step that went wrong, never at the student.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;max-width:680px">
+<div class="chat" style="align-self:flex-start"><div class="bub you" style="align-self:auto">2x + 3 = 11. just tell me x</div></div>
+<div class="chat on-ink" style="align-self:flex-end"><div class="bub meno">not yet. what could you do to both sides first?</div><svg width="48" height="48" style="flex:0 0 auto"><use href="#face-think"/></svg></div>
+<div class="chat" style="align-self:flex-start"><div class="bub you" style="align-self:auto">subtract 3. so 2x = 8, and x = 8?</div></div>
+<div class="chat on-ink" style="align-self:flex-end"><div class="bub meno">2x = 8 is right. now, 2 times what gives 8?</div><svg width="48" height="48" style="flex:0 0 auto"><use href="#face-oops"/></svg></div>
+<div class="chat" style="align-self:flex-start"><div class="bub you" style="align-self:auto">oh. x = 4</div></div>
+<div class="chat on-ink" style="align-self:flex-end"><div class="bub meno">there it is.</div><svg width="48" height="48" style="flex:0 0 auto"><use href="#face-aha"/></svg></div>
+<p class="sw-meta" style="font-size:14px;margin-top:8px">Hand-written example for illustration. It is not model output.</p>
+</div>
+<p style="font-size:22px">Proposed side line: <b class="disp" style="color:var(--mint)">ask meno. it'll ask you back.</b></p>
+</div>
+</section>
+
+<!-- 06 COMPONENTS -->
+<section class="sec">
+<div class="label">06 / components</div>
+<div class="body">
+<div>
+<h2>flat, round, pressable</h2>
+<p class="lede">Buttons are flat color with a thick darker bottom edge. Corners are 16px on buttons and 24px on cards. No gradients and no blur.</p>
+</div>
+<div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+<button class="btn b-mint">primary</button>
+<button class="btn b-paper">secondary</button>
+<button class="btn b-line">outline</button>
+<button class="btn b-coral">retry</button>
+</div>
+<div class="rules">
+<div><b>One dominant color</b><span>Every screen is mostly mint or mostly ink.</span></div>
+<div><b>Ink on mint</b><span>Never white text on mint.</span></div>
+<div><b>Lowercase wordmark</b><span>“meno” is always lowercase. No all caps in headlines.</span></div>
+<div><b>One face</b><span>The mascot is never rotated, stretched, or recolored outside the palette.</span></div>
+</div>
+</div>
+</section>
+
+<!-- 07 SOCIAL -->
+<section class="sec">
+<div class="label">07 / social card</div>
+<div class="body">
+<div class="card on-mint">
+<div class="brand"><svg width="56" height="56"><use href="#face-think"/></svg><span class="disp" style="font-size:38px">meno</span></div>
+<h3>An AI that <s>gives you answers</s> <mark>actually</mark> helps you learn.</h3>
+<div style="display:flex;justify-content:space-between;font-weight:700"><span>open-weight tutoring model</span><span>in development</span></div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer><div class="wrap">meno brand guidelines v6 · work in progress</div></footer>
+
+</body>
+</html>
